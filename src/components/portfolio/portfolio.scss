@@ -32,6 +32,10 @@
         height: 100%;
         overflow: hidden;
 
+        @include mobile {
+            overflow: visible;
+        }
+
 
         .wrapper {
             max-width: 1000px;
@@ -106,6 +110,8 @@
                     padding: 10px;
                     width: 200px;
                     cursor: pointer;
+                    z-index: 10;
+                    position: relative;
                 }
             }
         }
